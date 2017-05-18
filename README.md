@@ -1,41 +1,25 @@
 # proglang Designer Programming Language
 
-/*Author: John Hossler*/
+Author: John Hossler
 
-****************NOTE***************
+**NOTE**
 Every file assumes that you run the compile program from the root
-of this projects directory.
-DO NOT cd into any of the subdirectories and try and run scripts in
-there. Simply run compile from the root* directory and specify where the
-file is RELATIVE to the root* directory.
+of this project's directory.
+***DO NOT*** cd into any of the subdirectories and try and run scripts in
+there. Simply run compile from the root\* directory and specify where the
+file is RELATIVE to the root\* directory.
 
-* Any reference to the root directory means the directory where the
+\* Any reference to the root directory means the directory where the
 makefile is, i.e. the main directory of this project.
 
-# Contents
-## Syntax - here I explain the general syntax of my language
-----STATEMENTS
-----INITIALIZING VARIABLES
-----FUNCTIONS
-----OPERATORS
-----OBJECTS
-----ARRAYS
-## Running a program - this describes how to compile and run my code
-    on your own test scripts
-## One bit adder - this is instructions on how to edit the one bit
-    adder program to get different results
-
-### Text
-
 ## Syntax
-
 To make things simpler, I will generalize some things. When I say
-statements, I mean that it is a series of individual statements. I will
+statements, I a series of individual statements. I will
 go over statements soon. When you see "... statements ...", that refers
 the series of statements that make up a statement list.
 
-When I use the *optional* keyword, that means that what is after, up
-until the matching */optional* keyword, is entirely optional and does
+When I use the **optional** keyword, that means that what is after, up
+until the matching **/optional** keyword is entirely optional and does
 not need to be included to parse correctly.
 
 The "\" preceding a line means that line is roughly my code, with
@@ -43,17 +27,17 @@ a few keywords to help generalize the structure.
 
 Now, to get into the syntactic sugar.
 
-----STATEMENTS
+## STATEMENTS
 
 The entire program is just a series of statements.
 A statement can be one of three things:
 
 if statement:
-\if(cond) {
+`\if(cond) {
 \   ... statements ...
 \} *optional* else *optional* if(cond) */optional* {
 \   ... statements ...
-\} */optional*
+\} */optional*`
 
 while statement:
 \while(cond) {
