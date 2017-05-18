@@ -177,7 +177,7 @@ memory with the syntax id[int].
 All I currently support is single line comments, though multi-line
 comments will probably be added soon, as they aren't difficult.
 
-A comment currently is a single line comment. "////" marks the beginning
+A comment currently is a single line comment. "//" marks the beginning
 of a comment on a line, and the rest of that line will be ignored.
 
 ```
