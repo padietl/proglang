@@ -22,40 +22,39 @@ When I use the **optional** keyword, that means that what is after, up
 until the matching **/optional** keyword is entirely optional and does
 not need to be included to parse correctly.
 
-The "\" preceding a line means that line is roughly my code, with
-a few keywords to help generalize the structure.
-
-Now, to get into the syntactic sugar.
+Now, let's get into the syntactic sugar.
 
 ## STATEMENTS
 
 The entire program is just a series of statements.
 A statement can be one of three things:
 
-if statement:
-`\if(cond) {
-\   ... statements ...
-\} *optional* else *optional* if(cond) */optional* {
-\   ... statements ...
-\} */optional*`
+### if statement:
+```
+if (cond) {
+   ... statements ...
+} *optional* else *optional* if(cond) */optional* {
+   ... statements ...
+} */optional*
+```
 
-while statement:
-\while(cond) {
-\   ... statements ...
-\}
+### while statement:
+```
+while (cond) {
+   ... statements ...
+}
+```
 
-OR
+### Expression followed by a semicolon:
+`1 + 5;`
 
-an expression followed by a semicolon, example:
-\1 + 5;
-
-----INITIALIZING VARIABLES
+## INITIALIZING VARIABLES
 
 The syntax for initializing a variable is simple:
 
-\var id *optional* = expression *\optional*
+`var id *optional* = expression *\optional*`
 
-Variables always start with an alphanumeric number, but can have
+Variables always start with an , but can have
 digits inside of them.
 
 A special variable, used mainly for variadic functions, is '@', which
